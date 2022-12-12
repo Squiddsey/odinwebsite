@@ -3,6 +3,8 @@ body{
     margin: 0;
     overflow: hidden;
     font-family: Roboto, sans-serif;
+    display:flex;
+    flex-direction: column;
 }
 
 header{
@@ -21,7 +23,7 @@ font-size: 18px;
     align-items: baseline;
 }
 img{
-    height:250px;
+    height:200px;
     width:auto;
 }
 
@@ -41,6 +43,50 @@ li{
 
 .herocontainer{
 display:flex;
-justify-content: space-around;
+justify-content: center;
+align-items: center;
+flex:1;
+gap:30px;
+background-color: #1F2937;
+padding:50px 0px;
 
+}
+
+.card-one{
+display:flex;
+align-items: center;
+justify-content: space-between;
+width:300px;
+border:2px;
+border-color: red;
+border-style: dashed;
+
+    
+}
+
+.card-two{
+max-width:250px;
+border:2px;
+border-color: red;
+border-style: dashed;
+
+}
+
+.herotext{
+    font-size: 48px;
+  font-weight:bolder;
+color:#F9FAF8;
+ margin-bottom: 8px;
+ padding:0;
+}
+.sidekicktext{
+margin-bottom:16px;
+
+}
+button{
+    background: royalblue;
+  border: 1px solid royalblue;
+  color: white;
+  padding:8px;
+  margin-top:8px;
 }
