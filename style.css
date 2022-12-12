@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+margin:0;
+height:100px;
+display:flex;
+align-items: center;
+justify-content: space-around;
+background-color: #1F2937;
+color: #e5e7eb;
+font-size: 18px;
+}
+
+.links{
+    display:flex;
+    align-items: baseline;
+}
+img{
+    height:250px;
+    width:auto;
+}
+
+ul{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    padding:0;
+    margin:0;
+    gap:16px;
+
+}
+
+li{
+    margin-bottom:16px;
+}
+
+.herocontainer{
+display:flex;
+justify-content: space-around;
+
+}
