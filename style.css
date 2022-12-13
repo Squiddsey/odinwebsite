@@ -43,50 +43,71 @@ li{
 
 .herocontainer{
 display:flex;
+height:400px;
 justify-content: center;
 align-items: center;
-flex:1;
-gap:30px;
+gap:25px;
 background-color: #1F2937;
-padding:50px 0px;
-
+padding:25px 0px;
+margin:0;
 }
 
 .card-one{
 display:flex;
+flex-wrap: wrap;
 align-items: center;
 justify-content: space-between;
-width:300px;
+width:400px;
+
+
+/*
 border:2px;
 border-color: red;
 border-style: dashed;
-
+*/
     
 }
 
 .card-two{
-max-width:250px;
+
+height:250px;
+width:400px;
+/* to see borders
 border:2px;
 border-color: red;
 border-style: dashed;
+*/
+display: flex;
+align-items: center;
+
 
 }
 
 .herotext{
-    font-size: 48px;
-  font-weight:bolder;
+font-size: 48px;
+font-weight:bolder;
 color:#F9FAF8;
- margin-bottom: 8px;
+ margin-bottom: 4px;
  padding:0;
 }
 .sidekicktext{
-margin-bottom:16px;
+margin-bottom:8px;
+width:400px;
+font-size: 18px;
+color:#e5e7eb;
 
 }
 button{
-    background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
-  padding:8px;
-  margin-top:8px;
+display:Flex;
+justify-content: space-around;
+align-items: center;
+width:100px;
+background: royalblue;
+border: 1px solid royalblue;
+color: white;
+padding:8px;
+border-radius: 8px;
+font-weight: bold;
 }
+
+/* 
