@@ -43,6 +43,7 @@ li{
 
 .herocontainer{
 display:flex;
+flex:1;
 height:400px;
 justify-content: center;
 align-items: center;
@@ -69,16 +70,15 @@ border-style: dashed;
 }
 
 .card-two{
-
-height:250px;
+display: flex;
+align-items: center;
 width:400px;
 /* to see borders
 border:2px;
 border-color: red;
 border-style: dashed;
 */
-display: flex;
-align-items: center;
+
 
 
 }
@@ -110,4 +110,49 @@ border-radius: 8px;
 font-weight: bold;
 }
 
-/* 
+.infosection{
+
+}
+
+.title{
+text-align:center;
+font-size: 36px;
+font-weight:bolder;
+color:#1F2937;
+margin:32px 0px;
+
+}
+
+.infocontainer{
+display:flex;
+justify-content: center;
+gap:52px;
+text-align: center;
+}
+
+.info{
+max-width:200px;
+}
+
+
+
+.quotesection{
+display:flex;
+flex:1;
+justify-content: center;
+
+background-color: #e5e7eb;
+color:#1F2937;
+font-size: 36px;
+font-style: italic;
+}
+
+
+footer{
+height:100px;
+width:auto;
+display:flex;
+
+align-items: center;
+justify-content: center;
+}
