@@ -94,7 +94,7 @@ font-size: 18px;
 color:#e5e7eb;
 
 }
-button{
+.herobutton{
 display:Flex;
 justify-content: space-around;
 align-items: center;
@@ -159,6 +159,22 @@ justify-content: flex-end;
 font-weight: bolder;
 
 }
+
+.actionblock{
+height:300px;
+display:flex;
+flex-shrink:0;
+justify-content: center;
+align-items: center;
+}
+
+.modal{
+
+
+    
+}
+
+
 
 footer{
 height:72px;
