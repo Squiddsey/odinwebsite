@@ -1,10 +1,10 @@
 body{
 height: 100vh;
-margin: 0;
-
+margin:0;
 font-family: Roboto, sans-serif;
 display:flex;
 flex-direction: column;
+
 }
 
 header{
@@ -48,6 +48,9 @@ li{
 margin-bottom:16px;
 font-size: 18px;
 }
+
+/*I still want to find a way to align the hero text section with the header logo + quote section 
+horizontally but this will suffice for now */
 
 .herocontainer{
 background-color: #1F2937;
@@ -104,18 +107,21 @@ border-radius: 8px;
 font-weight: bold;
 }
 
+/* end of hero section */
+
 
 .title{
 text-align:center;
 font-size: 36px;
 font-weight:bolder;
 color:#1F2937;
-margin:32px 0px;
+margin:32px 0px 0px 0px;
 
 }
 
 .infocontainer{
 display:flex;
+flex:1;
 justify-content: center;
 gap:52px;
 text-align: center;
@@ -128,18 +134,31 @@ max-width:200px;
 }
 
 
-
-.quotesection{
+.quoteblock{
 display:flex;
-flex:1;
-justify-content: center;
+flex-direction: column;
+flex-shrink:0;
+height:300px;
 background-color: #e5e7eb;
-color:#1F2937;
-font-size: 36px;
-font-style: italic;
-margin-bottom:32px;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
 }
 
+.quotecontainer{
+display:flex;
+flex-wrap: wrap;
+font-size: 36px;
+margin:350px;
+justify-content: flex-end;
+}
+
+.thor{
+    
+font-weight: bolder;
+
+}
 
 footer{
 height:72px;
