@@ -1,11 +1,11 @@
 body{
 min-height: 100vh;
-
+margin:0;
 font-family: Roboto, sans-serif;
-font-size:75%;
+
 display:flex;
 flex-direction: column;
-background-color: black;
+
 }
 
 header{
@@ -22,7 +22,7 @@ align-items: center;
 justify-content:space-between;
 margin:auto;
 padding:16px 0px;
-width:1200px;
+max-width:1200px;
 }
 
 .logo{
@@ -71,7 +71,7 @@ justify-content:center;
 align-items: center;
 margin:0px auto;
 padding:50px 0px;
-width:1200px;
+max-width:1200px;
 
 
 }
@@ -90,8 +90,9 @@ display: flex;
 flex:1;
 align-items: center;
 justify-content: flex-start;
-width:600px;
-max-height: 250px;
+max-width:600px;
+max-height: 200px;
+overflow:hidden;
 }
 
 .herotext{
@@ -157,8 +158,8 @@ background-color: #e5e7eb;
 display:flex;
 justify-content: center;
 align-items: center;
-margin:0px;
-padding:50px 50px;
+margin:0;
+padding:100px 50px;
 
 
 }
@@ -169,8 +170,12 @@ max-width:900px;
 flex-wrap: wrap;
 font-size: 36px;
 justify-content: flex-end;
+}
 
-
+.quote{
+font-style:italic;
+font-weight:lighter;
+color:#1F2937;    
 }
 
 .thor{
@@ -189,6 +194,7 @@ background-color: white;
 
 .modal{
 display:flex;
+flex-shrink:0;
 background-color: #3882F6;
 padding:25px 150px;
 border-radius: 8px;
