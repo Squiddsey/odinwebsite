@@ -1,5 +1,5 @@
 body{
-height: 100vh;
+min-height: 100vh;
 margin:0;
 font-family: Roboto, sans-serif;
 font-size:75%;
@@ -171,11 +171,33 @@ align-items: center;
 .modal{
 display:flex;
 background-color: #3882F6;
-padding:25px 100px;
+padding:25px 150px;
 border-radius: 8px;
-
+justify-content: space-between;
+gap:120px;
+align-items: center;
+flex-wrap: wrap;
 }
 
+
+.modalheader{
+font-weight: 900;
+font-size: 18px;
+color:white;
+}
+.modalbody{
+color:white;
+}
+
+.modalbutton{
+border-radius: 8px;
+border:2px solid white;
+padding:8px 24px; 
+background: #3882F6;
+color: white;
+font-weight: bold;
+ 
+}
 
 
 footer{
@@ -190,7 +212,7 @@ justify-content: center;
 }
 
 /* TO DO
--Remove filler text in card 1 
+
 -finish modal section
 -see about aligning card section with header and quote 
 -consider reformating how i grouped stuff; maybe header quote and card section just in one section? idk
