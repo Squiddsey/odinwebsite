@@ -9,35 +9,29 @@
 </head>
 <body>
 
-    <header>
-        <div class="header">
-
-        <div class="logo">Header Logo</div>
-    
-        
-    <div class="links">
-    <ul>
-    <li>header link one</li>
-    <li>header link two</li>
-    <li>header link three</li>
-
-    </ul>
-    </div>
-</div>
-    </header>
-
-<div class="herocontainer">
-
-    <div class="card-container">
-        
+<div class="bigcontainer">
+    <nav class="navbar">
+        <div class="logo">
+           <img src="./images/logo.png" alt="Logo of the game, Earthbound">
+        </div        
+            <div class="links">
+                <ul>
+                    <li>header link one</li>
+                    <li>header link two</li>
+                    <li>header link three</li>
+                </ul>
+             </div>
+    </nav>
+<!--Start of Hero section-->
+<div class="herocontainer">     
       <div class="card-one">
 
-         <div class="herotext">This website is awesome</div>
+         <h1>This website is awesome</h1>
+        <p>            This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast. 
+        </p>
+             
 
-             <div class="sidekicktext">
-
-            This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast. 
-            </div>
+           
    
        <button class="herobutton">Sign up</button> 
 
@@ -46,21 +40,23 @@
 <div class="card-two">
     <img src="./images/earthbound.png" alt="Picture of Ness from Earthbound in 8bit format">
     </div>
-    </div>
+   
 </div>
+<!--End of Hero Section-->
 
+<!--Start of Info Section-->
 <div class="infosection">
+    <div class="title">Some random information. </div>
+    <div class="infocontainer">
 
-<div class="title">Some random information. </div>
-<div class="infocontainer">
-<div class="info">
-<img src="./images/jeff.png" alt="The character, Jeff, from the game, Earthbound" style="border:3px solid royalblue; border-radius:8px;">
-<div class="infotext">this is some subtext under an illustration or image</div>
-</div>
+        <div class="info">
+                <img src="./images/jeff.png" alt="The character, Jeff, from the game, Earthbound" style="border:3px solid royalblue; border-radius:8px;">
+                <div class="infotext">this is some subtext under an illustration or image</div>
+        </div>
 
     <div class="info">
-    <img src="./images/mrsaturn.png" alt="The chracter, Mr. Saturn, from Earthbound" style="border:3px solid royalblue; border-radius:8px;">
-    <div class="infotext">this is some subtext under an illustration or image</div>
+        <img src="./images/mrsaturn.png" alt="The chracter, Mr. Saturn, from Earthbound" style="border:3px solid royalblue; border-radius:8px;">
+        <div class="infotext">this is some subtext under an illustration or image</div>
     </div>
 
     <div class="info">
@@ -70,36 +66,33 @@
 
         <div class="info">
             <img src="./images/paula.png" alt="The character, Paula, from Earthbound" style="border:3px solid royalblue; border-radius:8px;">
-                <div class="infotext">this is some subtext under an illustration or image</div>
+            <div class="infotext">this is some subtext under an illustration or image</div>
         </div>
         </div>
+
 </div>
 
-<div class="quoteblock">
-    <div class="quotecontainer">
-        <div class="quote">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who Knows? All I know is that it looks nice. </div>
-        <div class="thor">-Thor, God of Thunder</div>
-    </div>
-</div>
+<!--End of info section, start of quote section-->
+<figure class="quote">
+    <blockquote>
+    This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who Knows? All I know is that it looks nice.
+    </blockquote>
 
-<div class="actionblock">
+    <figcaption>
+    &mdash; Thor, God of Thunder <cite>Thor's Big Book of Quote Reviews</cite>
+    </figcaption>
+</figure>
 
     <div class="modal">
+        <div class="modalbody modaltext">
+            <h2>Call to action! It's time! </h2>
+            <p>Sign up for our product by clicking that button right over there!</p>
+        </div>
 
-        <div class="leftmodal">
-
-            <div class="modalheader">Call to action! It's time! </div>
-
-            <div class="modalbody">Sign up for our product by clicking that button right over there!</div>
-            </div>
-            <div class="rightmodal">
+        <div class="modalbody modalsign">
             <button class="modalbutton">Sign up</button>
         </div>
-        
-
     </div>
-
-</div>
 
     <footer>
         <div class="copyright">
@@ -107,5 +100,6 @@
         </div>
 
     </footer>
+</div>
 </body>
 </html>
