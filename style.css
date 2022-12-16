@@ -1,59 +1,43 @@
 body{
 min-height: 100vh;
 margin:0;
+padding:0;
 font-family: Roboto, sans-serif;
+background-color: #FFFFFF;
+}
 
+.bigcontainer{
 display:flex;
 flex-direction: column;
-
 }
 
-header{
-height:72px;
+.navbar{
+display:flex;
 background-color: #1F2937;
-color: #e5e7eb;
-
-}
-
-.header{
-display:flex;
-flex:1;
+color: #F9FAF8;
+padding:16px 32px;
+justify-content: space-between;
 align-items: center;
-justify-content:space-between;
-margin:auto;
-padding:16px 0px;
-max-width:1200px;
+font-size: 18px;
 }
 
-.logo{
-font-size: 24px;
-color:#F9FAF8;
-
-}
-
-.links{
-display:flex;
-align-items: center;
-}
-
-img{
-height:200px;
-width:auto;
+.logo img{
+height:84px;
+width:84px;
 }
 
 ul{
 display:flex;
-align-items: center;
 list-style: none;
 padding:0;
 margin:0;
 gap:24px;
-
+align-items: center;
 }
 
 li{
-margin-bottom:16px;
-font-size: 1.5em;
+font-size: 18px;
+font-family: Roboto, sans-serif;
 }
 
 /*I still want to find a way to align the hero text section with the header logo + quote section 
@@ -61,70 +45,64 @@ horizontally but this will suffice for now */
 
 .herocontainer{
 background-color: #1F2937;
-
-}
-
-.card-container{
 display:flex;
-flex:1;
 justify-content:center;
 align-items: center;
-margin:0px auto;
-padding:50px 0px;
-max-width:1200px;
-
-
+padding:50px;
 }
+
 .card-one{
 display:flex;
-flex:1;
+flex-basis:400px;
 flex-wrap: wrap;
 align-items: center;
-justify-content: flex-start;
-max-width:600px;
-max-height:250px;   
+text-align:left;  
+padding:0px 0px 0px 50px;
+margin-left:150px;
 }
 
 .card-two{
 display: flex;
-flex:1;
-align-items: center;
-justify-content: flex-start;
-max-width:600px;
-max-height: 200px;
-overflow:hidden;
+flex-basis:300px;
+margin-right:200px;
 }
 
-.herotext{
+.card-two img{
+max-width:500px;
+max-height:350px;
+}
+
+
+h1{
 font-size: 4em;
 font-weight:bolder;
 color:#F9FAF8;
-margin-bottom: 4px;
-
+margin:0;
 }
-.sidekicktext{
+
+.herocontainer p{
 margin-bottom:8px;
 margin-right:150px;
 width:400px;
 font-size: 18px;
 color:#e5e7eb;
-
+opacity:0.7;
 }
+
 .herobutton{
 display:Flex;
 justify-content: space-around;
 align-items: center;
 width:100px;
 background: royalblue;
-border: 1px solid royalblue;
+border-color:#fff;
 color: white;
 padding:8px;
 border-radius: 8px;
-font-weight: bold;
+font-weight: bolder;
 }
 
 /* end of hero section */
-
 
 .title{
 text-align:center;
@@ -133,7 +111,6 @@ font-weight:bolder;
 color:#1F2937;
 padding:32px 0px;
 background-color: white;
-
 }
 
 .infocontainer{
@@ -143,9 +120,15 @@ justify-content: center;
 gap:52px;
 text-align: center;
 align-items: center;
-min-height:400px;
 background-color: white;
 flex-wrap: wrap;
+margin:50px;
+}
+
+.herocontainer img,
+.infocontainer img{
+height:200px;
+width:auto;
 }
 
 .info{
@@ -153,81 +136,58 @@ width:200px;
 padding:0px 0px 32px 0px;
 }
 
-
-.quoteblock{
-min-height:300px;
-background-color: #e5e7eb;
-display:flex;
-justify-content: center;
-align-items: center;
-margin:0;
-padding:100px 50px;
-
-
-}
-
-.quotecontainer{
-display:flex;
-max-width:900px;
-flex-wrap: wrap;
-font-size: 36px;
-justify-content: flex-end;
-}
-
 .quote{
-font-style:italic;
-font-weight:lighter;
-color:#1F2937;    
-}
-
-.thor{
-font-weight: bolder;
-font-size:28px;
-}
-
-.actionblock{
-height:300px;
+margin:0;
+background:#e5e7eb;
+padding:1em;
 display:flex;
-flex-shrink:0;
-justify-content: center;
+flex-direction: column;
 align-items: center;
-background-color: white;
+font-size:36px;
 }
+
+.quote figcaption,
+.quote blockquote{
+margin:1em;
+}
+
+.quote figcaption{
+text-align: right;
+font-weight: bold;
+font-size:24px;
+}
+
 
 .modal{
 display:flex;
 flex:1;
 background-color: #3882F6;
 padding:25px 150px;
+margin:50px;
 border-radius: 8px;
-justify-content: space-between;
-max-width:900px;
-gap:120px;
+justify-content: space-around;
 align-items: center;
-flex-wrap: wrap;
-margin:auto;
+gap:120px;
 }
 
-
-.modalheader{
+h2{
 font-weight: 900;
 font-size: 18px;
 color:white;
 }
-.modalbody{
+
+.modaltext p{
 color:white;
 }
 
 .modalbutton{
 border-radius: 8px;
-border:2px solid white;
+border-color:#fff;
 padding:8px 24px; 
 background: #3882F6;
-color: white;
+color:#FFF;
 font-weight: bold;
- 
 }
-
 
 footer{
 height:72px;
@@ -248,5 +208,9 @@ justify-content: center;
 -tweak quote section to be better looking
 -refine coding and edit out superfluous stuff 
 
-
+-add icon image in html [   <link rel="icon" href="images/shiba-logo.png"> ]
+use object-fit to contain images within containers
+text-align:center in body
+put earthbound logo back in header and explicitly define width and height
+remove explicit width and height for containers and replace with margins, background color, padding 
 pppp
